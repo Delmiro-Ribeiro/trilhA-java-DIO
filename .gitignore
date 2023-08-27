@@ -7,6 +7,11 @@
 # BlueJ files
 *.ctxt
 
+# file copy
+*.MinhaClasse.java/
+*java-anatomia-classes/
+*src/edu/semanaBase/
+
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
