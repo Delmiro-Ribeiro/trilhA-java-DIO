@@ -13,13 +13,30 @@ import java.util.Scanner;
 public class EquilibrandoSaldo {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
         double saldoAtual = scanner.nextDouble();
         double valorDeposito = scanner.nextDouble();
         double valorRetirada = scanner.nextDouble();
 
-       //TODO: Calcular o saldo atualizado de acordo com a descrição deste desafio...
+       //TODO: Calcular o saldo atualizado de acordo com a descrição deste desafio.
+    double novoSaldo = equilibrarSaldo(saldoAtual, valorDeposito, valorRetirada);
 
      //TODO: Imprimir o a saída de conforme a tabela de exemplos (uma casa decimal).
+        System.out.printf("Saldo atualizado na conta: %.1f%n", novoSaldo);
+     
+    }
+    
+    public static double equilibrarSaldo(double saldoAtual, double valorDeposito, double valorRetirada) {
+        saldoAtual += valorDeposito;
+        saldoAtual -= valorRetirada;
+        return saldoAtual;
     }
 }
+
+/*
+ * Descrição
+Para esse desafio, considere que você foi contratado por uma empresa bancária para auxiliar nas implementações e melhorias do sistema empresarial.
+Em uma análise inicial, foi identificado pela equipe financeira a necessidade de desenvolver uma solução que permita ao cliente equilibrar seu saldo bancário.
+ Dessa forma, o programa deve solicitar uma entrada que representa o saldo atual do funcionário,
+  e após, seja informado o valor de duas transações, sendo elas: um depósito e um saque. 
+  O programa deve atualizar o saldo com base nas transações e exibir o saldo final.
+ */
