@@ -6,6 +6,8 @@ package edu.semanaBase.desafiosDeCodigo.desafioAbrindoConta;
 * Sua tarefa é implementar uma classe chamada "ContaBancaria" que represente uma conta bancária com as seguintes informações:
 * número da conta, nome do titular e saldo.*/
 
+import java.util.Scanner;
+
 public class abrindoConta {
     public static void main(String[] args) {
         // TODO: Lendo os dados de Entrada:
